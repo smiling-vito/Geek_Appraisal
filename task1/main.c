@@ -1,30 +1,27 @@
-#include <stdio.h> 
-#include <math.h>
+#include<stdio.h>
+void Euler(double a)
+{
+ double n = 0.001;
+ 
+ while (1)
+ {
+ 	
+     double b = 0.999 * a;
+  printf("%lf      %lf\n", n, b);
+  if(a-b<0.000001)
+  {
+   break;
+  }
+  a = b; 
+  n += 0.001;
+ }
+
+}
 int main()
-{double h;
-double a;
-double y;
-printf("请输入步长：");
-scanf("%lf",&h);
-printf("请输入初值f（0）=") ;
-scanf("%lf",&a);
-double z=a-y;
-int n=0;
-double t=0;
-double w;
-double m;
-printf("请输入定义域（0.M）  M="); 
-scanf("%lf",&m);
-while(z>0.000001&&w<m){y=a-a*h;
-w=t+h;
-t=w;
-z=a-y;
-a=y;
-n++;
-printf("x=%f      f(x%d)=%f      f(x%d)-f(x%d)=%f\n",w,n,y,n,n-1,z);
+{
+ int a;
+ scanf("%d", &a);
+ printf("       x       y\n");
+ Euler(a);
+ return 0;
 }
-
-printf("微分方程的最终定态=%f 此时x的取值为%f",y,w);
-return 0;
-}
-
