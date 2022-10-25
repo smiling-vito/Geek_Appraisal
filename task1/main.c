@@ -1,11 +1,10 @@
 #include <stdio.h> 
-#include <math.h>
 int main()
 {double h;
 double a;
 double y;
 h=0.001;
-a=1;
+a=M_E;
 a=exp(a);
 printf("%f",a);
 double z=a-y;
