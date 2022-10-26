@@ -1,26 +1,24 @@
-#include<stdio.h>
-void Euler(double a)
-{
- double n = 0.001;
- while (1)
- {
-     double b = 0.999 * a;
-  printf("%lf      %lf\n", n, b);
-  if(a-b<0.000001)
-  {
-   break;
-  }
-  a = b; 
-  n += 0.001;
- }
-
-}
+#include <stdio.h>
 int main()
 {
- int a;
- scanf("%d", &a);
- printf("       x       y\n");
- Euler(a);
+ double h = 0.001;
+ double a = 1;    
+ double y;
+ 
+ double z = a-y;
+ double t=0;
+ double w ;
+ double m=25;
+ 
+ while(z >0.001*h && w < m) 
+ {
+	y = a - a * h;  
+ 	w = t + h; 
+	t = w;     
+ 	z = a - y;      
+ 	a = y;         
+ 	printf("%f    %f  %f\n",w,y,z) ;
+ }
+ printf("zuizhongdingtai=%f chishi x de zhi=%f",y,w);
  return 0;
 }
-
