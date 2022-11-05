@@ -17,8 +17,8 @@ int main()
 	t = w;     
  	z = a - y;      
  	a = y;         
- 	printf("%f    %f  %f\n",w,y,z) ;
+ 	printf("  %f\n",y) ;
  }
- printf("zuizhongdingtai=%f chishi x de zhi=%f",y,w);
+ printf("zuizhongdingtai=%f chishi x de zhi=%f",y);
  return 0;
 }
